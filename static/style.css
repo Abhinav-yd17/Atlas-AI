@@ -1699,3 +1699,189 @@ footer {
 .footer-links a:hover{
     text-decoration:underline;
 }
+
+
+
+/* ---------- Dark Mode ---------- */
+
+body.dark-mode {
+    --ink: #e8f1f7;
+    --ink-soft: #b8c9d6;
+    --ink-faint: #8fa6b7;
+
+    --sky: #0b1220;
+    --sky-deep: #172235;
+
+    --sea: #4da3d1;
+    --sea-dark: #2d82b0;
+    --lagoon: #2dd4bf;
+    --sun: #f5b942;
+
+    --paper: #111c2b;
+    --line: #293b4d;
+
+    --danger-bg: #3a1d1d;
+    --danger-ink: #ffb4ab;
+
+    --shadow-pass:
+        0 30px 60px -28px rgba(0, 0, 0, 0.65),
+        0 2px 6px rgba(0, 0, 0, 0.25);
+}
+
+/* Elements using hard-coded light colors */
+
+body.dark-mode textarea {
+    background: #0d1724;
+    color: var(--ink);
+}
+
+body.dark-mode textarea:focus {
+    background: #111c2b;
+}
+
+body.dark-mode .quick-prompts button:hover,
+body.dark-mode .ghost-btn:hover,
+body.dark-mode .copy-btn:hover {
+    background: #172a3c;
+}
+
+body.dark-mode .pass-stub {
+    background: linear-gradient(
+        180deg,
+        #162638 0%,
+        #101d2d 100%
+    );
+}
+
+body.dark-mode .result-box,
+body.dark-mode .pdf-content {
+    background: #101b2a;
+    color: #c7d5df;
+}
+
+body.dark-mode .result-box h2 {
+    background: #172a3c;
+}
+
+body.dark-mode .result-box p,
+body.dark-mode .result-box ul,
+body.dark-mode .result-box ol,
+body.dark-mode .result-box table {
+    color: #c7d5df;
+}
+
+body.dark-mode .result-box th {
+    background: #172a3c;
+}
+
+body.dark-mode .site-header {
+    background: rgba(11, 18, 32, 0.88);
+}
+
+body.dark-mode .main-nav {
+    background: var(--sky);
+}
+
+.theme-toggle {
+    width: 42px;
+    height: 42px;
+    border: 1px solid var(--line);
+    background: var(--paper);
+    color: var(--ink);
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    display: grid;
+    place-items: center;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-2px);
+    background: var(--sky-deep);
+}
+
+/* DARK MODE TEST */
+
+body.dark-mode {
+    background: #0b1220 !important;
+    color: #ffffff !important;
+}
+
+body.dark-mode .planner-card,
+body.dark-mode .result-section,
+body.dark-mode .loading-panel {
+    background: #111c2b !important;
+}
+
+body.dark-mode .card-header h2,
+body.dark-mode .result-header h2,
+body.dark-mode .hero-section h1,
+body.dark-mode .section-head h2,
+body.dark-mode .brand-name {
+    color: #ffffff !important;
+}
+
+body.dark-mode p,
+body.dark-mode .card-header p,
+body.dark-mode .result-header p,
+body.dark-mode .section-head p,
+body.dark-mode .stub-text,
+body.dark-mode .quick-label {
+    color: #b8c9d6 !important;
+}
+
+body.dark-mode textarea {
+    background: #0d1724 !important;
+    color: #ffffff !important;
+    border-color: #293b4d !important;
+}
+
+body.dark-mode .quick-prompts button,
+body.dark-mode .ghost-btn,
+body.dark-mode .copy-btn,
+body.dark-mode .theme-toggle {
+    background: #111c2b !important;
+    color: #ffffff !important;
+    border-color: #293b4d !important;
+}
+
+body.dark-mode .site-header {
+    background: rgba(11, 18, 32, 0.95) !important;
+}
+
+
+/* DARK MODE TEST */
+
+body.dark-mode {
+    background: #050505 !important;
+    color: white !important;
+}
+
+body.dark-mode main {
+    background: #050505 !important;
+}
+
+body.dark-mode .hero-section {
+    background: #050505 !important;
+}
+
+body.dark-mode .planner-card {
+    background: #111827 !important;
+    color: white !important;
+}
+
+body.dark-mode .planner-card h2 {
+    color: white !important;
+}
+/* DARK MODE TEST */
+
+body.dark-mode {
+    background: #050505 !important;
+    color: white !important;
+}
+
+body.dark-mode .planner-card {
+    background: #111827 !important;
+    color: white !important;
+}

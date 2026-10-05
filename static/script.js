@@ -500,3 +500,40 @@ document.addEventListener("keydown", function(event) {
         });
     }
 })();
+
+// ================= DARK MODE =================
+
+document.addEventListener("DOMContentLoaded", () => {
+    const themeToggle = document.getElementById("themeToggle");
+
+    if (!themeToggle) {
+        console.error("❌ themeToggle button NOT FOUND");
+        return;
+    }
+
+    console.log("✅ Dark mode button found");
+
+    // Load saved theme
+    const savedTheme = localStorage.getItem("theme");
+
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-mode");
+        themeToggle.textContent = "☀️";
+    } else {
+        document.body.classList.remove("dark-mode");
+        themeToggle.textContent = "🌙";
+    }
+
+    // Toggle theme
+    themeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+
+        const isDark = document.body.classList.contains("dark-mode");
+
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+
+        themeToggle.textContent = isDark ? "☀️" : "🌙";
+
+        console.log("🌙 Dark mode:", isDark);
+    });
+});
